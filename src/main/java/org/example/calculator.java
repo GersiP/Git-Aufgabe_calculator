@@ -13,4 +13,12 @@ public class calculator {
         return a * b;
     }
 
+    public int divide(int a, int b) throws DivideByZeroException{
+        if(b == 0){
+            throw new DivideByZeroException("Divide by 0");
+        }else{
+            return a/b;
+        }
+    }
+
 }
